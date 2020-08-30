@@ -14,7 +14,7 @@ public class CalCulatorTest {
         int result2;
         int result3;
         String input1 = "2 + 3 * 4 / 2";
-        String input2 = "2 * 10 / 3 + 2";
+        String input2 = "2 + 10 / 5 + 2";
         String input3 = "2 - 3 * 4 / 2";
         //when
         CalCulator calCulator1 = new CalCulator(input1);
@@ -25,7 +25,7 @@ public class CalCulatorTest {
         result3 = calCulator3.calculate();
         //then
         assertThat(result1).isEqualTo(10);
-        assertThat(result2).isEqualTo(8);
+        assertThat(result2).isEqualTo(4);
         assertThat(result3).isEqualTo(-2);
     }
 }
